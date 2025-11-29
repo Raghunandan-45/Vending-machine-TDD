@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending Machine Change Calculator TDD</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.20.0.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
+  </head>
+  <body style='margin: 0 1em;'>
+    <div id='main'>
+      <h1>Vending Machine <em>Change Calculator</em></h1>
+      <h2>Calculate the change (<em>coins</em>) to return to a customer</h2>
+    </div>
+
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+
+    <script src="https://code.jquery.com/qunit/qunit-2.20.0.js"></script>
+    <script type="module">
+      // Import from your source file
+      import { getChange } from './src/change.js';
+
+      QUnit.test('getChange(1,1) should return empty array', function(assert) {
+        const result = getChange(1, 1);
+        assert.deepEqual(result, []);
+      });
+
+      QUnit.test('getChange(215,300) should return [50,20,10,5]', function(assert) {
+        const result = getChange(215, 300);
+        assert.deepEqual(result, [50, 20, 10, 5]);
+      });
+
+      QUnit.test('getChange(486, 600) should return [100, 10, 2, 2]', function(assert) {
+        const result = getChange(486, 600);
+        assert.deepEqual(result, [100, 10, 2, 2]);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "vending-machine-tdd",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/change.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "TDD Vending Machine Change Calculator",
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.0.14",
+    "@vitest/ui": "^4.0.14",
+    "vitest": "^4.0.14"
+  }
+}
