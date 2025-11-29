@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Coverage
+coverage/
+*.lcov
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test output
+test-results/
+
+# Build output
+dist/
+build/
+
+# Documentation
+docs/
